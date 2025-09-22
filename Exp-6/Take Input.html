@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Input</title>
+</head>
+<body>
+  <h1>JavaScript Input Methods</h1>
+
+  <button onclick="promptInput()">Prompt Input</button>
+  <button onclick="formInput()">Form Input</button>
+
+  <input type="text" id="textInput" placeholder="Type something and click form input">
+
+  <script>
+    function promptInput() {
+      let name = prompt("Enter your name:");
+      alert("You entered: " + name);
+    }
+
+    function formInput() {
+      let value = document.getElementById("textInput").value;
+      alert("Form input value: " + value);
+    }
+  </script>
+</body>
+</html>
