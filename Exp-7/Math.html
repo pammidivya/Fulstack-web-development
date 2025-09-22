@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object Example</title>
+</head>
+<body>
+  <h1>Math Object Example</h1>
+  <p id="mathResult"></p>
+
+  <script>
+    let a = 25;
+    let output = "PI: " + Math.PI + "<br>";
+    output += "Square Root of " + a + ": " + Math.sqrt(a) + "<br>";
+    output += "Random Number (0-1): " + Math.random() + "<br>";
+    output += "Max of (10, 50, 30): " + Math.max(10, 50, 30) + "<br>";
+    output += "Rounded 5.67: " + Math.round(5.67);
+
+    document.getElementById("mathResult").innerHTML = output;
+  </script>
+</body>
+</html>

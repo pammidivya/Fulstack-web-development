@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Example</title>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <p id="info"></p>
+
+  <script>
+    // Accessing document properties
+    document.getElementById("info").innerHTML = 
+      "Document Title: " + document.title + "<br>" +
+      "Document URL: " + document.URL;
+
+    // Using document method to write directly to page
+    document.write("<p>This line was added using document.write()</p>");
+
+    // Modifying content using document object
+    document.getElementById("heading").innerHTML = "Heading Changed!";
+  </script>
+</body>
+</html>

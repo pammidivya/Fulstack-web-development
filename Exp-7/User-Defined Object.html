@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User-Defined Object Example</title>
+</head>
+<body>
+  <h1>User-Defined Object Example</h1>
+  <p id="userObjectResult"></p>
+
+  <script>
+    // Constructor function
+    function Person(firstName, lastName, age) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.age = age;
+
+      // Method
+      this.getFullName = function() {
+        return this.firstName + " " + this.lastName;
+      };
+
+      // Accessor (getter)
+      Object.defineProperty(this, "isAdult", {
+        get: function() {
+          return this.age >= 18;
+        }
+      });
+    }
+
+    // Creating object instance
+    let person1 = new Person("John", "Doe", 25);
+
+    let output = "Name: " + person1.getFullName() + "<br>";
+    output += "Age: " + person1.age + "<br>";
+    output += "Is Adult: " + person1.isAdult;
+
+    document.getElementById("userObjectResult").innerHTML = output;
+  </script>
+</body>
+</html>

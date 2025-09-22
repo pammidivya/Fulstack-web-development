@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Object Example</title>
+</head>
+<body>
+  <h1>Date Object Example</h1>
+  <p id="dateResult"></p>
+
+  <script>
+    let today = new Date();
+    let output = "Current Date: " + today.toDateString() + "<br>";
+    output += "Day: " + today.getDate() + "<br>";
+    output += "Month: " + (today.getMonth() + 1) + "<br>"; // Months are 0-based
+    output += "Year: " + today.getFullYear() + "<br>";
+    output += "Time: " + today.getHours() + ":" + today.getMinutes();
+
+    document.getElementById("dateResult").innerHTML = output;
+  </script>
+</body>
+</html>

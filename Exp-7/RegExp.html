@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RegExp Object Example</title>
+</head>
+<body>
+  <h1>RegExp Object Example</h1>
+  <p id="regexResult"></p>
+
+  <script>
+    let str = "My email is test@example.com";
+    let pattern = /\w+@\w+\.\w+/; // Regular expression for email
+
+    let output = "String: " + str + "<br>";
+    output += "Pattern Test: " + pattern.test(str) + "<br>";
+    
+    let result = pattern.exec(str);
+    output += "Matched Email: " + result[0];
+
+    document.getElementById("regexResult").innerHTML = output;
+  </script>
+</body>
+</html>

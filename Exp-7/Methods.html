@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Example</title>
+</head>
+<body>
+  <h1>Window Object Example</h1>
+  <button onclick="showWindowInfo()">Show Window Info</button>
+  <button onclick="openNewWindow()">Open New Window</button>
+
+  <script>
+    function showWindowInfo() {
+      let info = "Window Width: " + window.innerWidth + 
+                 "\nWindow Height: " + window.innerHeight;
+      window.alert(info); // Using window alert method
+    }
+
+    function openNewWindow() {
+      window.open("https://www.example.com", "_blank", "width=400,height=300");
+    }
+
+    // Using window.setTimeout() to show a delayed message
+    window.setTimeout(() => {
+      alert("This message appears after 3 seconds!");
+    }, 3000);
+  </script>
+</body>
+</html>

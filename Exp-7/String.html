@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Object Example</title>
+</head>
+<body>
+  <h1>String Object Example</h1>
+  <p id="stringResult"></p>
+
+  <script>
+    let text = "JavaScript is fun!";
+    let output = "Original: " + text + "<br>";
+    output += "Length: " + text.length + "<br>";
+    output += "Uppercase: " + text.toUpperCase() + "<br>";
+    output += "Character at 4: " + text.charAt(4) + "<br>";
+    output += "Substring (0-10): " + text.substring(0, 10) + "<br>";
+    output += "Index of 'fun': " + text.indexOf("fun");
+
+    document.getElementById("stringResult").innerHTML = output;
+  </script>
+</body>
+</html>

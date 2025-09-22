@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Example</title>
+</head>
+<body>
+  <h1>Array Object Example</h1>
+  <p id="arrayResult"></p>
+
+  <script>
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    // Using properties
+    let output = "Initial Array: " + fruits.join(", ") + "<br>";
+    output += "Array Length: " + fruits.length + "<br>";
+
+    // Using methods
+    fruits.push("Orange"); // add element
+    fruits.sort(); // sort elements alphabetically
+    output += "After Push & Sort: " + fruits.join(", ") + "<br>";
+
+    fruits.pop(); // remove last element
+    output += "After Pop: " + fruits.join(", ");
+
+    document.getElementById("arrayResult").innerHTML = output;
+  </script>
+</body>
+</html>
